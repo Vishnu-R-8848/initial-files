@@ -1,0 +1,128 @@
+/* =========================================
+   1. DESIGN SYSTEM VARIABLES (:root)
+   ========================================= */
+:root {
+    /* --- Colors --- */
+    --color-primary: #2E4662;
+    /* Deep Blue */
+    --color-accent: #CAFC88;
+    /* Lime Green */
+    --color-bg-body: #EDF0F5;
+    /* Light Gray/Blue */
+    --color-bg-surface: #ffffff;
+    /* White */
+    --color-text-body: #64748B;
+    /* Lighter grey */
+
+    /* --- Spacing (1rem = 16px) --- */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 5rem;
+    --space-4xl: 8rem;
+
+    /* --- Typography: Base Ingredients --- */
+    --font-base: 'Inter', system-ui, sans-serif;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --lh-tight: 1.1;
+    --lh-base: 1.4;
+    --lh-relaxed: 1.7;
+
+    /* --- Typography: Fluid Math (clamp + calc) --- */
+    --fs-sm: clamp(0.75rem, calc(0.7rem + 0.25vw), 0.875rem);
+    /* Tiny */
+    --fs-base: clamp(1rem, calc(0.95rem + 0.25vw), 1.125rem);
+    /* Body */
+    --fs-h3: clamp(1.25rem, calc(1.15rem + 0.5vw), 1.5rem);
+    /* Cards */
+    --fs-h2: clamp(1.75rem, calc(1.5rem + 1.25vw), 2.5rem);
+    /* Sections */
+    --fs-h1: clamp(2.5rem, calc(2rem + 2.5vw), 4.5rem);
+    /* Hero */
+    --fs-display: clamp(3rem, calc(2.5rem + 5vw), 6rem);
+    /* Big Numbers */
+
+    /* --- Typography: Shorthand Tokens (style variant weight size/lh family) --- */
+    --text-body: var(--fw-light) var(--fs-base)/var(--lh-relaxed) var(--font-base);
+    --text-hero: var(--fw-light) var(--fs-h1)/var(--lh-tight) var(--font-base);
+    --text-section: var(--fw-light) var(--fs-h2)/var(--lh-tight) var(--font-base);
+    --text-card: var(--fw-regular) var(--fs-h3)/var(--lh-base) var(--font-base);
+    --text-number: var(--fw-light) var(--fs-display)/1 var(--font-base);
+    --text-label: var(--fw-medium) var(--fs-sm)/var(--lh-base) var(--font-base);
+
+    /* --- Border Radius --- */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    --radius-pill: 9999px;
+    --radius-circle: 50%;
+
+    /* --- Shadows --- */
+    --shadow-sm: 0 4px 6px -1px rgba(46, 70, 98, 0.1);
+    --shadow-md: 0 10px 15px -3px rgba(46, 70, 98, 0.15);
+    --shadow-floating: 0 25px 50px -12px rgba(46, 70, 98, 0.25);
+}
+
+/* =========================================
+   2. RESPONSIVE BASE & RESET
+   ========================================= */
+
+html {
+    font-size: 100%;
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   3. GLOBAL ELEMENT STYLES
+   ========================================= */
+
+body {
+    background-color: var(--color-bg-body);
+    color: var(--color-primary);
+
+    /* Using the new Shorthand Token! */
+    font: var(--text-body);
+
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
