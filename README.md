@@ -2,6 +2,8 @@
 
 HTML :
 
+SEO AND BODY setUp 
+
 - outter wrapper
 - wrapper
 - container
@@ -20,4 +22,11 @@ CSS :
 
 - root setups 
 - fonts [inherit fonts]
-- colors and bg colors 
+- colors and bg colors
+- container
+
+JS :
+
+- stick navBar
+- cursor follower
+- if needed module programming 
