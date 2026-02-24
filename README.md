@@ -18,6 +18,6 @@ HTML :
 
 CSS : 
 
-root setups 
-fonts [inherit fonts]
-colors and bg colors 
+- root setups 
+- fonts [inherit fonts]
+- colors and bg colors 
