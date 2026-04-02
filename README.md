@@ -1,5 +1,15 @@
 # initial-files
 
+Instead of Class...,Use this Tag
+.header,<header>
+.navigation,<nav>
+.main-content,<main>
+.sidebar,<aside>
+.blog-post / .card,<article>
+.section,<section>
+.footer,<footer>
+.caption,<figcaption>
+
 HTML :
 
 SEO AND BODY setUp 
@@ -52,4 +62,5 @@ UI/UX :
 - On mouse EVENT'S
 - Key board EVENT'S
 - scrolling animations
+
 
